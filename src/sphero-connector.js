@@ -48,6 +48,7 @@ const connectToy = (toyType, toyName) => {
       return connectLightningMcQueen();
     case 'R2D2':
       return connectR2D2();
+    /* istanbul ignore next */
     default:
       return null;
   }
