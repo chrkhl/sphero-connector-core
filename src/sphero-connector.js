@@ -26,6 +26,12 @@ const connectR2D2 = async () => {
   return toy ? createConnectorApi(toy) : null;
 };
 
+const connectR2Q5 = async () => {
+  const toy = await Scanner.findR2Q5();
+
+  return toy ? createConnectorApi(toy) : null;
+};
+
 const connectBB9E = async () => {
   const toy = await Scanner.findBB9E();
 
@@ -48,6 +54,8 @@ const connectToy = (toyType, toyName) => {
       return connectLightningMcQueen();
     case 'R2D2':
       return connectR2D2();
+    case 'R2Q5':
+      return connectR2Q5();
     /* istanbul ignore next */
     default:
       return null;
@@ -59,6 +67,7 @@ module.exports = {
   connectSpheroMiniWithName,
   connectLightningMcQueen,
   connectR2D2,
+  connectR2Q5,
   connectBB9E,
   connectToy
 };

@@ -25,6 +25,10 @@ describe('validation', () => {
     it('returns true for "R2D2"', () => {
       expect(isToySupported('R2D2')).toBe(true);
     });
+
+    it('returns true for "R2Q5"', () => {
+      expect(isToySupported('R2Q5')).toBe(true);
+    });
   });
 
   describe('isToyNameSupported', () => {

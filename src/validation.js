@@ -1,4 +1,4 @@
-const supportedToys = [ 'SpheroMini', 'BB9E', 'LightningMcQueen', 'R2D2' ];
+const supportedToys = [ 'SpheroMini', 'BB9E', 'LightningMcQueen', 'R2D2', 'R2Q5' ];
 
 const isToySupported = toyType => {
   if (typeof toyType !== 'string') {

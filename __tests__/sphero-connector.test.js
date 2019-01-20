@@ -7,6 +7,7 @@ jest.mock('spherov2.js', () => ({
     findSpheroMiniByName: jest.fn(),
     findLightningMcQueen: jest.fn(),
     findR2D2: jest.fn(),
+    findR2Q5: jest.fn(),
     findBB9E: jest.fn()
   }
 }));
@@ -16,6 +17,7 @@ const mockFindResult = value => {
   Scanner.findSpheroMiniByName.mockReturnValue(value);
   Scanner.findLightningMcQueen.mockReturnValue(value);
   Scanner.findR2D2.mockReturnValue(value);
+  Scanner.findR2Q5.mockReturnValue(value);
   Scanner.findBB9E.mockReturnValue(value);
 };
 
@@ -32,6 +34,7 @@ describe('sphero-connector', () => {
     Scanner.findSpheroMiniByName.mockReset();
     Scanner.findLightningMcQueen.mockReset();
     Scanner.findR2D2.mockReset();
+    Scanner.findR2Q5.mockReset();
     Scanner.findBB9E.mockReset();
   });
 
@@ -60,6 +63,12 @@ describe('sphero-connector', () => {
 
     test('connectR2D2 returns null', async () => {
       const actual = await connector.connectR2D2();
+
+      expect(actual).toBe(null);
+    });
+
+    test('connectR2Q5 returns null', async () => {
+      const actual = await connector.connectR2Q5();
 
       expect(actual).toBe(null);
     });
@@ -96,6 +105,12 @@ describe('sphero-connector', () => {
 
     test('connectToy("R2D2") returns null', async () => {
       const actual = await connector.connectToy('R2D2');
+
+      expect(actual).toBe(null);
+    });
+
+    test('connectToy("R2Q5") returns null', async () => {
+      const actual = await connector.connectToy('R2Q5');
 
       expect(actual).toBe(null);
     });
@@ -136,6 +151,12 @@ describe('sphero-connector', () => {
       assertConnectorApi(actual);
     });
 
+    test('connectR2Q5 returns expected object', async () => {
+      const actual = await connector.connectR2Q5();
+
+      assertConnectorApi(actual);
+    });
+
     test('connectBB9E returns expected object', async () => {
       const actual = await connector.connectBB9E();
 
@@ -168,6 +189,12 @@ describe('sphero-connector', () => {
 
     test('connectToy("R2D2") returns expected object', async () => {
       const actual = await connector.connectToy('R2D2');
+
+      assertConnectorApi(actual);
+    });
+
+    test('connectToy("R2Q5") returns expected object', async () => {
+      const actual = await connector.connectToy('R2Q5');
 
       assertConnectorApi(actual);
     });
