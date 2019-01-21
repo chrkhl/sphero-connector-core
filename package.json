@@ -1,23 +1,26 @@
 {
   "name": "sphero-connector-core",
   "version": "0.0.1",
-  "description": "",
+  "description": "A thin wrapper round spherov2.js (unofficial API for Sphero® toys)",
+  "author": "Christian Kühl",
+  "license": "MIT",
+  "repository": "chrkhl/sphero-connector-core",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:watch:coverage": "jest --coverage --watchAll",
+    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
     "lint": "eslint .",
     "lint:fix": "eslint ."
   },
-  "author": "Christian Kühl",
-  "license": "MIT",
   "dependencies": {
     "color-convert": "1.9.3",
     "spherov2.js": "0.0.6"
   },
   "devDependencies": {
+    "coveralls": "3.0.2",
     "eslint": "5.12.1",
     "eslint-config-es": "0.9.1",
     "jest": "23.6.0"
