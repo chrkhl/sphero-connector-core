@@ -4,7 +4,10 @@
   "description": "A thin wrapper round spherov2.js (unofficial API for Sphero® toys)",
   "author": "Christian Kühl",
   "license": "MIT",
-  "repository": "chrkhl/sphero-connector-core",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrkhl/sphero-connector-core.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "jest",
