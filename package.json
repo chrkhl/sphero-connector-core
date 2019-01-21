@@ -1,6 +1,6 @@
 {
   "name": "sphero-connector-core",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A thin wrapper round spherov2.js (unofficial API for Sphero® toys)",
   "author": "Christian Kühl",
   "license": "MIT",
