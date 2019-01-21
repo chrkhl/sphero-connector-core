@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/chrkhl/sphero-connector-core.svg?branch=master)](https://travis-ci.org/chrkhl/sphero-connector-core)
 [![Coverage](https://coveralls.io/repos/github/chrkhl/sphero-connector-core/badge.svg?branch=master)](https://coveralls.io/github/chrkhl/sphero-connector-core?branch=master)
 
-<img src="./assets/sphero-connector-core.svg" alt="Sphero Connector Core" width="280" />
+<img src="https://raw.githubusercontent.com/chrkhl/sphero-connector-core/master/assets/sphero-connector-core.svg" alt="Sphero Connector Core" width="280" />
 
 
 # Sphero Connector Core
