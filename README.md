@@ -9,7 +9,7 @@
 
 # Sphero Connector Core
 
-This is a thin (and partial) wrapper around the [unofficial Sphero V2 API](https://github.com/igbopie/spherov2.js) for Sphero toys use by [Sphero Connector HTTP](https://github.com/chrkhl/sphero-connector-http.js) and [Sphero Connector IPC](https://github.com/chrkhl/sphero-connector-ipc.js).
+This is a thin (and partial) wrapper around the [unofficial Sphero V2 API](https://github.com/igbopie/spherov2.js) for Sphero toys used by [Sphero Connector HTTP](https://github.com/chrkhl/sphero-connector-http) and [Sphero Connector IPC](https://github.com/chrkhl/sphero-connector-ipc).
 
 
 ## API
@@ -28,7 +28,7 @@ The following methods try to find a toy and establish a connection with it.
 
 Valid values for `toyType` are: `SpheroMini`, `LightningMcQueen`, `R2D2`, `R2Q5`, `BB9E`.
 
-If a toy is found and connected, each of these methods will return an object with the following structure:
+If a toy is found and connected, an object with the following structure is returned.
 
 ``` javascript
 {
@@ -38,7 +38,7 @@ If a toy is found and connected, each of these methods will return an object wit
 }
 ```
 
-## Example: Connect Sphero Mini and set main LED color red
+## Example: Connect Sphero Mini and set main LED color to red
 
 ``` javascript
 const connector = require('sphero-connector-core');
