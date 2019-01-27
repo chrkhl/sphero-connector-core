@@ -3,12 +3,13 @@
   "version": "0.0.5",
   "description": "A thin wrapper round spherov2.js (unofficial API for Sphero® toys)",
   "keywords": [
-    "sphero",
-    "api",
-    "wrapper",
-    "connector",
     "cli",
-    "sphero-connector"
+    "sphero",
+    "connector",
+    "sphero-connector",
+    "http",
+    "api",
+    "express"
   ],
   "author": "Christian Kühl",
   "license": "MIT",
@@ -43,6 +44,6 @@
     "collectCoverageFrom": [
       "src/**/*.js"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/jest-setup.js"
+    "setupFilesAfterEnv": ["<rootDir>/jest-setup.js"]
   }
 }
