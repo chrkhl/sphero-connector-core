@@ -31,19 +31,21 @@
     "lint:fix": "eslint ."
   },
   "dependencies": {
-    "color-convert": "1.9.3",
-    "spherov2.js": "0.0.6"
+    "color-convert": "2.0.1",
+    "spherov2.js": "0.0.10"
   },
   "devDependencies": {
-    "coveralls": "3.0.2",
-    "eslint": "5.12.1",
-    "eslint-config-es": "0.9.1",
-    "jest": "24.0.0"
+    "coveralls": "3.0.7",
+    "eslint": "6.5.1",
+    "eslint-config-es": "3.16.0",
+    "jest": "24.9.0"
   },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.js"
     ],
-    "setupFilesAfterEnv": ["<rootDir>/jest-setup.js"]
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest-setup.js"
+    ]
   }
 }
