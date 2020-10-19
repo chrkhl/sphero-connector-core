@@ -35,10 +35,10 @@
     "spherov2.js": "0.0.10"
   },
   "devDependencies": {
-    "coveralls": "3.0.7",
-    "eslint": "6.5.1",
-    "eslint-config-es": "3.16.0",
-    "jest": "24.9.0"
+    "coveralls": "3.1.0",
+    "eslint": "7.11.0",
+    "eslint-config-es": "3.24.6",
+    "jest": "26.6.0"
   },
   "jest": {
     "collectCoverageFrom": [
